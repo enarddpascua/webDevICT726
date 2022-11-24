@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 #burger-icon-wrapper{
     /* display: inline-block; */
     cursor: pointer;
@@ -7,7 +13,7 @@
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #334E68;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -25,11 +31,37 @@
 }
 
 #nav-parent{
-    background-color: aquamarine;
-    transition: 0.4s;
-    height: 20%;
-    width: 10%;
+    background-color: #829AB1;
+    transition: 0.1s;
+    width: 4%;
     position: fixed;
     bottom: 40vh;
-    left: 0;
+    left: 1vw;
+    padding: 0px 0.5rem;
+    border-radius: .2rem;
+}
+
+#link-wrapper{
+    padding: 0;
+}
+
+#link-wrapper >li{
+    list-style: none;
+    text-align: center;
+}
+
+#link-wrapper a{
+    text-decoration: none;
+    font-size:x-large;
+    color: #F0F4F8;
+  
+}
+
+#link-wrapper a:hover{
+    color: #BCCCDC;
+}
+
+#link-wrapper i{
+    text-decoration: none;
+    transition: 0.4s;
 }
