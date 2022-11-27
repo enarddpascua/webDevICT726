@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-
-
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 header {
-    /* background-image: linear-gradient(to bottom right, #044E54, #2CB1BC);
-    color: #F0F4F8; */
     height: 15vh;
     border-radius: .2rem;
 }
 
 #burger-icon-wrapper {
-    /* display: inline-block; */
     cursor: pointer;
-    /* position: fixed; */
 }
 
 .bar1, .bar2, .bar3 {
@@ -101,13 +95,70 @@ header {
 }
 
 #contact-form label{
-    font-weight: bold;
+    font-weight: bolder;
     font-size: large;
 }
 
 #contact-form > div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-between;
+}
+
+#contact-form input, textarea{
+    text-decoration: none;
+    outline: none;
+    margin-top: .5rem;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border: none;
+    resize: none;
+}
+
+#contact-form textarea{
+    height: 10rem;
+}
+
+#contact-form input:focus, textarea:focus{
+    background-color: #BEF8FD;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact-form input[type=submit]{
+    cursor: pointer;
+    background-color: #D9E2EC;
+    color: #102A43;
+}
+
+#contact-footer{
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: .2rem;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }

@@ -8,6 +8,11 @@
     <script src="./jscripts/navigation.js" defer></script>
     <script src="https://kit.fontawesome.com/692b5d8ceb.js" crossorigin="anonymous"></script>
     <title>Contact me</title>
+    <script>
+        const submitFunc = (e) => {
+            e.preventDefault();
+        }
+    </script>
 </head>
 <body>
     <header id="contact-header">
@@ -28,21 +33,25 @@
               <li><a href="#" class="portfolio-link"><i class="fa-solid fa-briefcase"></i></a></li>
           </ul>
        </nav>
-       <form id="contact-form" action="#">
+       <form id="contact-form" action="https://google.com" method="get">
             <div>
                 <label for="email">Email: </label>
                 <input type="email" name="email" placeholder="Enter your email here.." required/>
             </div>
             <div>
                 <label for="telephone">Mobile #:</label>
-                <input type="tel" name="telephone" placeholder="(Optional)"/>
+                <input type="tel" name="telephone" placeholder="(Optional)" pattern="/04d{8}/"/>
             </div>
             <div>
                 <label for="message">Message: </label>
-                <textarea name="message" required>
-                </textarea>
+                <textarea name="message" placeholder="Enter your message here..."></textarea>
             </div>
-            <input type="submit"/>
+            <input type="submit" onsubmit="(e) => submitFunc(e)"/>
        </form>
+       <footer id="contact-footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+       </footer>
 </body>
 </html>
