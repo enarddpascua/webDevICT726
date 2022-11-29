@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital designs made by me</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./jscripts/navigation.js" defer></script>
     <script src="https://kit.fontawesome.com/692b5d8ceb.js" crossorigin="anonymous"></script>
-    <title>Contact me</title>
-    <script src="./jscripts/contact.js"></script>
 </head>
 <body>
     <header id="contact-header">
-        <h1>Contact</h1>
-        <h5>You may send me an email to talk about anything.</h5>
+        <h1>Gallery</h1>
+        <h5>Digital designs made with ipad.</h5>
     </header>
     <hr>
     <nav id="nav-parent">
@@ -30,29 +29,49 @@
               <li><a href="#" class="portfolio-link"><i class="fa-solid fa-briefcase"></i></a></li>
           </ul>
        </nav>
-       <form id="contact-form" onsubmit="submitFunc();" method="get" action="https://google.com">
+       <section class="design-section">
             <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="Enter your email here.." required id="email" onblur="validateEmail()"/>
-                <p class="err-msg-email"></p>
+                <p>Used a greek statue for my reference</p>
             </div>
+            <figure>
+                <img alt="greek_statue" src="./resources/greek.jpg"/>
+            </figure>
+        </section>
+        <section class="design-section">
+            <figure>
+                <img alt="hanya_mask" src="./resources/hanya.jpg"/>
+            </figure>
             <div>
-                <label for="telephone">Mobile #:</label>
-                <input id="mobileNum" type="tel" name="telephone" placeholder="(Optional)" onblur="validateMobileNum()"/>
-                <p class="err-msg-mobile"></p>
+                <p>Japanese hanya mask</p>
             </div>
+        </section>
+        <section class="design-section">
             <div>
-                <label for="message">Message: </label>
-                <textarea name="message" placeholder="Enter your message here..." required></textarea>
+                <p>Samurai with a crow bird on top of his head</p>
             </div>
-            <input type="submit"/>
-       </form>
-       <footer id="contact-footer">
+            <figure>
+                <img alt="samurai" src="./resources/samurai.jpeg"/>
+            </figure>
+        </section>
+        <section class="design-section">
+            <figure>
+                <img alt="skeleton" src="./resources/skeleton.jpeg"/>
+            </figure>
             <div>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+                <p>Skeleton smoking in a tux</p>
             </div>
-       </footer>
+            
+        </section>
+        <section class="design-section">
+            <div>
+                <p>Valkyrie and a villain</p>
+            </div>
+            <figure>
+                <img alt="valkyrie" src="./resources/valkyrie.jpeg"/>
+            </figure>
+        </section>
+        <footer>
+            <p>&copy; Reynaldo</p>
+        </footer>
 </body>
 </html>

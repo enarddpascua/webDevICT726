@@ -7,6 +7,22 @@ body {
 header {
     height: 15vh;
     border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1, h2, h3, h4, h5, h6{
+    margin: .5rem 0 0 0;
 }
 
 #burger-icon-wrapper {
@@ -69,11 +85,7 @@ header {
     transition: 0.4s;
 }
 
-#contact-header{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
+/* CONTACT PAGE */
 
 #contact-form{
     display: flex;
@@ -84,15 +96,13 @@ header {
     width: 35%;
     border-radius: .2rem;
     height: 60vh;
-    margin-top: 5rem;
-    position: absolute;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     color: #D9E2EC;
     padding: 2rem;
-    top: 13vh;
 }
 
 #contact-form label{
@@ -133,14 +143,6 @@ header {
     color: #102A43;
 }
 
-#contact-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .fa{
     padding: 20px;
@@ -171,4 +173,51 @@ header {
     color: rgb(207, 79, 79);
     margin: 0;
     font-weight: bold;
+}
+
+/* ABOUT PAGE */
+
+.about-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.about-section figure{
+    max-height: 500px;
+    width: auto;
+}
+
+.about-section img{
+    width: 400px;
+    height: 450px;
+    border-radius: .2rem;
+}
+
+.about-section div{
+    width: 40%;
+}
+
+/* DESIGN PAGE */
+
+.design-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.design-section figure{
+    max-height: 500px;
+    width: auto;
+}
+
+.design-section img{
+    width: 300px;
+    height: 300px;
+    border-radius: .2rem;
+    border: .5px solid black;
 }

@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me and this website</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="./jscripts/navigation.js" defer></script>
     <script src="https://kit.fontawesome.com/692b5d8ceb.js" crossorigin="anonymous"></script>
-    <title>Contact me</title>
-    <script src="./jscripts/contact.js"></script>
+    <script src="./jscripts/navigation.js" defer></script>
 </head>
 <body>
-    <header id="contact-header">
-        <h1>Contact</h1>
-        <h5>You may send me an email to talk about anything.</h5>
+    <header>
+        <h1>About page</h1>
+        <h5>Artist . Tattooist . Software Developer</h5>
     </header>
-    <hr>
+<hr>
     <nav id="nav-parent">
         <div id="burger-icon-wrapper" onclick="navFunction(this)">
           <div class="bar1"></div>
@@ -30,29 +29,32 @@
               <li><a href="#" class="portfolio-link"><i class="fa-solid fa-briefcase"></i></a></li>
           </ul>
        </nav>
-       <form id="contact-form" onsubmit="submitFunc();" method="get" action="https://google.com">
+       <section class="about-section">
             <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="Enter your email here.." required id="email" onblur="validateEmail()"/>
-                <p class="err-msg-email"></p>
+                <p>I consider myself as an artist. I love to draw. </p>
             </div>
+            <figure>
+                <img alt="charcoal_pencils" src="./resources/charcoal_pencils.jpeg"/>
+            </figure>
+       </section>
+       <section class="about-section">
+            <figure>
+                <img alt="pencil" src="./resources/pencil.jpeg"/>
+            </figure>
             <div>
-                <label for="telephone">Mobile #:</label>
-                <input id="mobileNum" type="tel" name="telephone" placeholder="(Optional)" onblur="validateMobileNum()"/>
-                <p class="err-msg-mobile"></p>
+                <p>Black and Grey is my thing because it shows the shadows of the subject, which gives a depth emotion to the image </p>
             </div>
+       </section>
+       <section class="about-section">
             <div>
-                <label for="message">Message: </label>
-                <textarea name="message" placeholder="Enter your message here..." required></textarea>
+                <p>Jun Cha is my idol when it comes to arts. He is a multi-disciplinary artist specializing in black and grey tattoo, art and design dedicated to quality, excellence and the creative process.</p>
             </div>
-            <input type="submit"/>
-       </form>
-       <footer id="contact-footer">
-            <div>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
+            <figure>
+                <img alt="jun_cha" src="./resources/jun_cha.jpeg"/>
+            </figure>
+       </section>
+       <footer>
+        <p>&copy; Reynaldo</p>
        </footer>
 </body>
 </html>
