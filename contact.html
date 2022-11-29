@@ -8,11 +8,7 @@
     <script src="./jscripts/navigation.js" defer></script>
     <script src="https://kit.fontawesome.com/692b5d8ceb.js" crossorigin="anonymous"></script>
     <title>Contact me</title>
-    <script>
-        const submitFunc = (e) => {
-            e.preventDefault();
-        }
-    </script>
+    <script src="./jscripts//contact.js"></script>
 </head>
 <body>
     <header id="contact-header">
@@ -33,20 +29,22 @@
               <li><a href="#" class="portfolio-link"><i class="fa-solid fa-briefcase"></i></a></li>
           </ul>
        </nav>
-       <form id="contact-form" action="https://google.com" method="get">
+       <form id="contact-form" onsubmit="submitFunc();" method="get" action="https://google.com">
             <div>
                 <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="Enter your email here.." required/>
+                <input type="email" name="email" placeholder="Enter your email here.." required id="email" onblur="validateEmail()"/>
+                <p class="err-msg-email"></p>
             </div>
             <div>
                 <label for="telephone">Mobile #:</label>
-                <input type="tel" name="telephone" placeholder="(Optional)" pattern="/04d{8}/"/>
+                <input id="mobileNum" type="tel" name="telephone" placeholder="(Optional)" onblur="validateMobileNum()"/>
+                <p class="err-msg-mobile"></p>
             </div>
             <div>
                 <label for="message">Message: </label>
-                <textarea name="message" placeholder="Enter your message here..."></textarea>
+                <textarea name="message" placeholder="Enter your message here..." required></textarea>
             </div>
-            <input type="submit" onsubmit="(e) => submitFunc(e)"/>
+            <input type="submit"/>
        </form>
        <footer id="contact-footer">
             <div>

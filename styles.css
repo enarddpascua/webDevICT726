@@ -83,7 +83,7 @@ header {
     background-color: #829AB1;
     width: 35%;
     border-radius: .2rem;
-    height: 50vh;
+    height: 60vh;
     margin-top: 5rem;
     position: absolute;
     margin-left: auto;
@@ -92,6 +92,7 @@ header {
     right: 0;
     color: #D9E2EC;
     padding: 2rem;
+    top: 13vh;
 }
 
 #contact-form label{
@@ -103,6 +104,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 1rem 0;
 }
 
 #contact-form input, textarea{
@@ -163,4 +165,10 @@ header {
 .fa-twitter {
     background: #55ACEE;
     color: white;
+}
+
+.err-msg-mobile, .err-msg-email{
+    color: rgb(207, 79, 79);
+    margin: 0;
+    font-weight: bold;
 }
