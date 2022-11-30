@@ -15,13 +15,13 @@ function navFunction(el) {
                 linkHolder.children[i].childNodes[0].textContent = "About";
                 break;
             case 2:
-                linkHolder.children[i].childNodes[0].textContent = "Contact";
+                linkHolder.children[i].childNodes[0].textContent = "Notes";
                 break;
             case 3:
                 linkHolder.children[i].childNodes[0].textContent = "Designs";
                 break;
             default:
-                linkHolder.children[i].childNodes[0].textContent = "Portfolio";
+                linkHolder.children[i].childNodes[0].textContent = "Contact";
         }
       }
     }else{
@@ -38,13 +38,13 @@ function navFunction(el) {
                 linkHolder.children[i].childNodes[0].appendChild(node).setAttribute("class","fa-solid fa-circle-info");
                 break;
             case 2:  
-                linkHolder.children[i].childNodes[0].appendChild(node).setAttribute("class","fa-solid fa-address-book");
+                linkHolder.children[i].childNodes[0].appendChild(node).setAttribute("class","fa-solid fa-pencil");
                 break;
             case 3:  
                 linkHolder.children[i].childNodes[0].appendChild(node).setAttribute("class","fa-solid fa-paint-brush");
                 break;
             default:
-                linkHolder.children[i].childNodes[0].appendChild(node).setAttribute("class","fa-solid fa-briefcase");
+                linkHolder.children[i].childNodes[0].appendChild(node).setAttribute("class","fa-solid fa-address-book");
 
         }
       }
