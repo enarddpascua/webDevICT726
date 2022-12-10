@@ -55,4 +55,15 @@ function navFunction(el) {
   function nightMode(){
     document.body.classList.toggle("nightmode");
     document.querySelector(".nightmode-wrapper").classList.toggle("night");
+    localStorage.getItem("nightmode") == "on" ? 
+    localStorage.setItem("nightmode", "off"):
+    localStorage.setItem("nightmode", "on");
+  }
+
+ if(localStorage.getItem("nightmode") == "on"){
+    document.body.setAttribute("class", "nightmode");
+    document.querySelector(".nightmode-wrapper").setAttribute("class","nightmode-wrapper night");
+  }else if(localStorage.getItem("nightmode") == "off"){
+    document.body.removeAttribute("class");
+    document.querySelector(".nightmode-wrapper").setAttribute("class","nightmode-wrapper");
   }
