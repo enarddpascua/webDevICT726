@@ -2,7 +2,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-image: linear-gradient(to bottom right, #38BEC9, #E0FCFF); */
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.nightmode{
+    background-color: #102A43;
+    color: #F0F4F8;
 }
 
 header {
@@ -37,16 +44,40 @@ header h1, h2, h3, h4, h5, h6{
     margin: .5rem 0 0 0;
 }
 
-#nightmode-wrapper{
+.nightmode-wrapper{
     position: absolute;
     top: 0;
     right: 0;
     margin-right: 3rem;
     margin-top: 2rem;
-    background-color: #829AB1;
+    border:5px solid #829AB1;
+    background-color: #D9E2EC;
     border-radius: 30px;
-    width: 10%;
-    height: 5%;
+    width: 8%;
+    height: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-button{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: #007bb5;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.night {
+    border:5px solid #F7D070;
+    background-color: #FCEFC7;
+    transition: 0.4s;
+}
+
+.night > div{
+    right: 0;
+    background-color: #C99A2E;
 }
 
 #burger-icon-wrapper {
@@ -388,6 +419,7 @@ header h1, h2, h3, h4, h5, h6{
     background-color: #ffff81;
     margin-top: 2rem;
     padding: .5rem;
+    color: black;
 }
 
 #todoForm{

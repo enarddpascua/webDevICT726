@@ -53,5 +53,6 @@ function navFunction(el) {
 
 
   function nightMode(){
-    
+    document.body.classList.toggle("nightmode");
+    document.querySelector(".nightmode-wrapper").classList.toggle("night");
   }
