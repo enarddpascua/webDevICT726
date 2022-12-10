@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-image: linear-gradient(to bottom right, #BEF8FD, #E0FCFF); */
+    /* background-image: linear-gradient(to bottom right, #38BEC9, #E0FCFF); */
 }
 
 header {
@@ -22,8 +22,31 @@ footer{
     justify-content: center;
 }
 
+footer > img{
+    height: 7rem;
+    width: 9.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+
 header h1, h2, h3, h4, h5, h6{
     margin: .5rem 0 0 0;
+}
+
+#nightmode-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    background-color: #829AB1;
+    border-radius: 30px;
+    width: 10%;
+    height: 5%;
 }
 
 #burger-icon-wrapper {
@@ -59,6 +82,7 @@ header h1, h2, h3, h4, h5, h6{
     left: 1vw;
     padding: 0px 0.5rem;
     border-radius: .2rem;
+    z-index: 99;
 }
 
 #link-wrapper{
@@ -91,6 +115,61 @@ header h1, h2, h3, h4, h5, h6{
     width: 10rem;
 }
 
+/* HOME Page */
+
+#home-main{
+    min-height: 75vh;
+}
+
+#home-main > section{
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.first-section img{
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
+}
+
+.second-section{
+    margin-left: 10rem;
+}
+
+.second-section > img{
+    position: absolute;
+    right: 60;
+    margin-right: 15%;
+    z-index: 0;
+}
+
+.third-section > img{
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    z-index: 0;
+}
+
+.third-section{
+    margin-left: 20rem;
+}
+
+#home-main > section > div{
+    width: 50%;
+    z-index: 1;
+
+}
+
+#home-main > section > div > p{
+    border: 1px solid rgb(151, 150, 150);
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: large;
+    margin-left:2rem
+}
 /* CONTACT PAGE */
 
 #contact-form{
@@ -101,7 +180,7 @@ header h1, h2, h3, h4, h5, h6{
     background-color: #829AB1;
     width: 35%;
     border-radius: .2rem;
-    height: 60vh;
+    min-height: 60vh;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -223,7 +302,7 @@ header h1, h2, h3, h4, h5, h6{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 #design-main section{
@@ -295,7 +374,7 @@ header h1, h2, h3, h4, h5, h6{
 
 /* TODO PAGE */
 #todo-main{
-    min-height: 50vw;
+    min-height: 75vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;

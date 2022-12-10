@@ -50,3 +50,8 @@ function navFunction(el) {
       }
     }
   }
+
+
+  function nightMode(){
+    
+  }
